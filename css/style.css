@@ -1,0 +1,313 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Nova Fonte";
+}
+html,body{
+	height: 100%;
+}
+@font-face{
+	SRC: url('../Fontes/OpenSans-Light.ttf');
+	font-family: "Nova Fonte";
+}
+header{
+	width: 100%;
+	padding: 20px 0px;
+	background-color:#cfd4d1;
+}
+/*header*/ .container{
+	width: 90%;
+	max-width: 1100px;
+	margin: 0 auto;
+	/*background-color: brown;*/
+}
+.clear{
+	clear: both;
+}
+.container .logo1{
+	float: left;
+	width: 140px;
+	height: 60px;
+	background-image: url('../Imagens/logo1.png');
+	background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container .logo1 a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.container .logo2{
+  height: 60px;
+  width: 170px;
+  float: right;
+  background-image: url('../Imagens/logo2.png');
+  background-size:100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container .logo2 a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.section1{
+	width: 100%;
+	height: 540px;
+}
+/*.section1*/ .container{/*coloquei o comentário*/
+	height: 100%;	
+}
+.container .banner-container{
+	width: 100%;
+	height:100%;
+	background-image: url('../Imagens/bg-form.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:100% 100%;
+	position:relative;
+}
+.banner-container .container-form{
+	width: 400px;
+	height: 105%;
+	position:absolute;
+	top: -2.5%;
+	right: 30px;
+}
+.container-form form{
+  width: 100%;
+  height:100%;
+  border: 2px solid gray;
+  background-color: white;
+  background-clip: padding-box;
+}
+.container-form fieldset{
+  width: 100%;
+  height:100%;
+  border: 2px solid gray;
+  background-clip: padding-box;
+}
+.container-form form fieldset h2{
+	padding:22px;
+	font-size: 20px;
+	background-color:#c0c4c2;
+}
+form fieldset .camposDeLogin{
+	width: 100%;
+	padding: 10px 12px;
+	background-color:white;
+}
+.camposDeLogin label{
+	color:#c0c4c2;
+	font-weight:bold;
+	font-size:18px;
+}
+.camposDeLogin input{
+	width:100%;
+	height: 40px;
+	margin-top: 8px;
+	padding-left: 6px;
+	outline:0;
+	font-size:18px;
+	font-weight:bold;
+	border:2px solid #c0c4c2;
+}
+.camposDeLogin input[type="submit"]{
+	background-color:#2e41ab;
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+}
+.camposDeLogin p{
+	margin-top: 23px;
+	color:gray;
+}
+.arrow-to-bottom{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	position: absolute;
+	bottom:-20px;
+	left: 48%;
+	transform: translateX(-50%);
+	background-image: url('../Imagens/arrow.png');
+	background-position: center;
+}
+.section-2{
+	width: 100%;
+	height: 150px;
+	/*background-color: blue;*/
+}
+.section-2 .container{
+	height: 100%;
+	background-color:#cfd4d1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container .frase{
+	color: gray;
+	/*background-color: pink;*/
+}
+.frase h2{
+	text-align: center;
+	font-size: 30px;
+}
+.frase p{
+	align-items: left;
+}
+.section-3{
+	width: 100%;
+	padding: 4px 0px;
+}
+.container .texto-imagem{
+  width: 100%;
+  margin-bottom: 4px;
+  background-color:#dcf6f7;
+}
+.container .texto-imagem:nth-of-type(1), .container .texto-imagem:nth-of-type(3){
+ display: flex;
+ flex-direction: row;
+}
+.container .texto-imagem:nth-of-type(2), .container .texto-imagem:nth-of-type(4){
+ display: flex;
+ flex-direction: row-reverse;
+}
+.section-3 > .container > .texto-imagem > .texto{
+	width: 45%;
+	padding: 0px 20px;
+	display: flex;
+	align-items: center;
+}
+.section-3 > .container > .texto-imagem > .texto p{
+	font-size: 22px;
+}
+.section-3 > .container > .texto-imagem > img{
+	width: 55%;
+	height:auto;
+}
+.container .mensagem-final{
+	width: 100%;
+	background-color:#cfd4d1;
+	text-align: center;
+	padding: 40px 20px;
+}
+.mensagem-final h3{
+	margin-bottom: 12px;
+}
+.mensagem-final p{
+	font-size: 20px;
+	line-height:40px;
+	text-decoration:underline;
+	text-decoration-style:groove;
+}
+footer{
+	width: 100%;
+}
+.container .rodape-contato{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 60px 0px;
+}
+.rodape-contato .footer-contato{
+	text-align: center;
+}
+.footer-contato p{
+	margin-top: 8px;
+}
+.footer-contato > .logo1{
+  float: none;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+@media screen and (max-width: 800px){
+	.container{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 600px){	
+	.container .logo1, .container .logo2{
+		float: none;
+		margin: 10px auto;
+	}
+	.section1{
+		width: 100%;
+		min-height: 540px;
+	}
+	.banner-container .container-form{
+		width: 94%;
+		height:100%;
+		position: absolute;
+		top:0px;
+		left:4%;
+	}
+	form fieldset .camposDeLogin{
+		width: 100%;
+		padding:17px 12px;
+		height:auto;
+		background-color:white;
+	}
+	.arrow-to-bottom{
+		display: none;
+	}
+}
+@media screen and (max-width:  550px){
+	.container .banner-container{
+		height:100%;
+		padding:0px 0px;
+		text-align: center;
+	}	
+	.banner-container .container-form{
+		height:100%;
+		position:static; /*resetando o position*/
+		display: inline-block;
+		left: 0;
+	}
+	.container-form form fieldset h2{
+		padding:15px 10px;
+		font-size: 19px;
+		background-color:#c0c4c2;
+	}
+	.section-2{
+		width: 100%;
+		height:200px;
+	}
+	.section-2 .container{
+		height: 100%;
+		background-color:#cfd4d1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}/**/
+}
+@media screen and (max-width: 500px){
+	/*texto e imagem na vertical*/
+	.container .texto-imagem:nth-of-type(1), .container .texto-imagem:nth-of-type(3){
+	 display: flex;
+	 flex-direction: column;
+	}
+	.container .texto-imagem:nth-of-type(2), .container .texto-imagem:nth-of-type(4){
+	 display: flex;
+	 flex-direction: column;
+	}
+	.section-3 > .container > .texto-imagem{
+		margin-bottom:10px;
+	}
+	.section-3 > .container > .texto-imagem > .texto{
+		width: 100%;
+		padding: 0px 20px;
+		display: flex;
+		align-items: center;
+	}
+	.section-3 > .container > .texto-imagem > img{
+		width: 100%;	
+		/*width:55%;
+		height:auto; a imagem diminui quando a página é diminuida*/
+		height:230px;
+	}
+}
